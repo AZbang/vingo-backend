@@ -1,0 +1,16 @@
+{
+  "name": "vingo",
+  "version": "1.0.0",
+  "description": "Backend server for vingo app",
+  "author": "azbang",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "init:hermitage": "node ./node_modules/craping-hermitage"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.1",
+    "scraping-hermitage": "git+https://github.com/AZbang/scrape-hermitage.git"
+  }
+}
