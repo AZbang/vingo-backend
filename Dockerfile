@@ -8,13 +8,11 @@ WORKDIR /usr/src/app
 # where available (npm@5+)
 COPY package*.json ./
 
-RUN npm install
-# If you are building your code for production
-# RUN npm install --only=production
+# install prod dependencies and init database
+RUN npm install --only=production && npm run init:hermitage
 
 # Bundle app source
 COPY . .
-CMD [ "npm", "run", "init:hermitage" ]
 
 EXPOSE 8080
-CMD [ "PORT=8080", "npm", "start" ]
+CMD PORT=8080 npm start

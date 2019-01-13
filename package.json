@@ -6,7 +6,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "init:hermitage": "node ./node_modules/craping-hermitage"
+    "init:hermitage": "node ./node_modules/scraping-hermitage"
   },
   "dependencies": {
     "cors": "^2.8.5",
